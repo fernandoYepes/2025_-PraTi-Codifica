@@ -1,0 +1,235 @@
+/* src/App.css */
+
+/* Isso garante que a nossa aplicação possa ocupar a tela toda */
+#root {
+  width: 100%;
+}
+
+/* Estilos Gerais */
+body {
+  font-family: sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  margin: 0;
+  display: flex; /* Adicionamos flexbox */
+  justify-content: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+/* Barra de Navegação */
+.navbar {
+  /* Mantemos o estilo da navbar, mas garantimos que ela ocupe a largura toda */
+  width: 100%;
+  max-width: 1400px;
+  box-sizing: border-box; /* Garante que o padding não a faça maior que o max-width */
+  background-color: #1c1c1c;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  margin-bottom: 0rem; /* Adiciona um espaço abaixo da navbar */
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Conteúdo Principal */
+.main-content {
+  width: 100%;
+  max-width: 1400px; /* A mesma largura máxima da navbar */
+  padding: 0 1rem; /* Adiciona um respiro nas laterais */
+  box-sizing: border-box;
+}
+
+/* O resto do seu CSS (h1, form, movie-list, movie-card, etc.) continua igual... */
+
+h1 {
+  text-align: center;
+  color: #e50914; /* Cor inspirada na Netflix */
+}
+
+/* Formulário de Busca */
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 0.5rem;
+}
+
+form input {
+  width: 50%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #333;
+  border-radius: 4px;
+  background-color: #222;
+  color: #fff;
+}
+
+form button {
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #e50914;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* Lista de Filmes em Grade */
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Estilo do Card do Filme */
+.movie-card {
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.movie-card .movie-info {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.movie-card h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem 0;
+}
+
+.movie-card p {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 0 0 1rem 0;
+}
+
+.movie-card button {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+.details-button {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: auto;
+}
+/* Estilos da Página de Detalhes */
+.details-page {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+
+.details-poster {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.details-info h1 {
+  text-align: left;
+  margin-top: 0;
+  font-size: 2.5rem;
+}
+
+.details-info .tagline {
+  font-style: italic;
+  color: #aaa;
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+}
+
+.details-info .overview {
+  line-height: 1.6;
+}
+
+.details-info p {
+  margin-bottom: 1rem;
+}
+.favorite-button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #f5c518; /* Cor inspirada no IMDb */
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+/* Navbar */
+.navbar {
+  background-color: #1c1c1c;
+  padding: 1rem 2rem;
+  display: flex;
+  gap: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+/* Estilos da Paginação */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+.pagination button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination button:disabled {
+  background-color: #1c1c1c;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.pagination span {
+  font-size: 1.2rem;
+}
