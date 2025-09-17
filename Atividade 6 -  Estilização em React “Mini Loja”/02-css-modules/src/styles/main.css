@@ -1,0 +1,13 @@
+/* src/styles/main.css */
+@import './_tokens.css';
+
+/* Estilos que são realmente globais, como o layout do grid */
+.product-grid {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 1024px) { .product-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 768px) { .product-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 480px) { .product-grid { grid-template-columns: 1fr; } }

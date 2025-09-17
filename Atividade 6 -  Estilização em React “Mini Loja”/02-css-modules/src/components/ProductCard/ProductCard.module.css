@@ -1,0 +1,10 @@
+/* Cole aqui o conteúdo simplificado do product card, sem BEM */
+.card { background-color: var(--color-surface); border: 1px solid var(--color-border); /* ...etc */ }
+.card:hover { transform: translateY(-4px); /* ...etc */ }
+.imageWrapper { aspect-ratio: 1 / 1; /* ...etc */ }
+.title { /* ... */ }
+.info { /* ... */ }
+.price { /* ... */ }
+.rating { /* ... */ }
+.buttonWrapper { margin-top: auto; }
+/* (O CSS completo está no histórico da nossa conversa, basta remover os prefixos "product-card__") */

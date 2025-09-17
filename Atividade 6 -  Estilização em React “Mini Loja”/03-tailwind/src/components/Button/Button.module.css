@@ -1,0 +1,31 @@
+/* src/components/Button/Button.module.css */
+.btn {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  transition: all var(--transition-duration);
+  border: 1px solid transparent;
+}
+.btn:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Variante Solid */
+.solid {
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+  border-color: var(--color-primary);
+}
+.solid:hover {
+  filter: brightness(1.1);
+}
+
+/* Podemos adicionar mais variantes no futuro, como 'outline' */
+/*
+.outline { ... }
+.ghost { ... }
+*/

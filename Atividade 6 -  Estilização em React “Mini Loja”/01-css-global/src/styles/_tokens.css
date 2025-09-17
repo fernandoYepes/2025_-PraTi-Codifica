@@ -1,0 +1,32 @@
+/* src/styles/_tokens.css */
+:root {
+  /* Tokens de Cor - TEMA CLARO (DEFAULT) */
+  --color-background: #f8f9fa;
+  --color-surface: #ffffff;
+  --color-text-primary: #212529;
+  --color-text-secondary: #6c757d;
+  --color-primary: #0d6efd;
+  --color-border: #dee2e6;
+
+  /* Tokens de Sombra */
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+  /* Outros Tokens */
+  --border-radius: 0.5rem;
+  --transition-duration: 200ms;
+}
+
+[data-theme='dark'] {
+  /* Tokens de Cor - TEMA ESCURO */
+  --color-background: #121212;
+  --color-surface: #1e1e1e;
+  --color-text-primary: #e9ecef;
+  --color-text-secondary: #adb5bd;
+  --color-primary: #3b82f6;
+  --color-border: #495057;
+
+  /* Sombras mais fortes para o modo escuro */
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.5), 0 2px 4px -2px rgb(0 0 0 / 0.5);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
+}
